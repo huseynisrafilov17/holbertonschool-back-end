@@ -15,6 +15,6 @@ tasks = ""
 for i in response1:
     if i["completed"]:
         comp += 1
-    tasks += f"\t {i['title']}\n"
+        tasks += f"\t {i['title']}\n"
 print(f"Employee {response2['name']} is done with tasks({comp}/{total})")
 print(tasks, end="")
