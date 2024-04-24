@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""My API usage"""
 import requests
 import sys
 
