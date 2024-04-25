@@ -4,7 +4,7 @@ import requests
 import sys
 
 
-if len(sys.argv) == 2:
+if __name__ == "__main__" and len(sys.argv) == 2:
     url = "https://jsonplaceholder.typicode.com/"
     user_id = sys.argv[1]
     r1 = requests.get(f"{url}users/{user_id}/todos")
