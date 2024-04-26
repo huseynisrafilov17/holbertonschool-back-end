@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """My API usage"""
+import json
 import requests
 import sys
-import json
 
 if len(sys.argv) == 2:
     url = "https://jsonplaceholder.typicode.com/"
