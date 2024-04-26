@@ -11,8 +11,8 @@ if len(sys.argv) == 2:
     string = ""
     usr_name = res1["name"]
     for i in res:
-        string += f'''"{usr_id}","{usr_name}","{i["completed"]}",
-                   "{i["title"]}"\n'''
+        string += '"{}","{}","{}","{}"\n'.format(usr_id, usr_name,
+                                                 i["completed"], i["title"])
 
     with open(f"{usr_id}.csv", "w") as f:
         f.write(string)
